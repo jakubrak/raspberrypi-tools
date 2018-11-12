@@ -16,7 +16,7 @@ fi
 
 echo ${SYSROOT_DIR}
 
-rsync -avz pi@raspberrypi.local:/lib ${SYSROOT_DIR}
-rsync -avz pi@raspberrypi.local:/usr/include ${SYSROOT_DIR}/usr
-rsync -avz pi@raspberrypi.local:/usr/lib ${SYSROOT_DIR}/usr
-rsync -avz pi@raspberrypi.local:/opt/vc ${SYSROOT_DIR}/opt
+rsync -avzL pi@raspberrypi.local:/lib ${SYSROOT_DIR}
+rsync -avzL pi@raspberrypi.local:/usr/include ${SYSROOT_DIR}/usr
+rsync -avzL pi@raspberrypi.local:/usr/lib ${SYSROOT_DIR}/usr
+rsync -avzL pi@raspberrypi.local:/opt/vc ${SYSROOT_DIR}/opt
